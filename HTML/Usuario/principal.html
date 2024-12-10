@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Izel</title>
     <link rel="stylesheet" href="/CSS/principal.css">
-    <script src="/JAVASCRIP/principal.js" ></script>
+    <script defer src="/JAVASCRIP/principal.js"></script>
 </head>
 <body>
-
     <header>
         <div class="encabezado-izquierda">
             <h1>BIENVENIDO A IZEL - <span id="nombre-usuario">JHON JAIRO</span></h1>
@@ -72,7 +71,7 @@
     <!-- Ventana de Citas Médicas -->
     <div id="ventana-citas" class="ventana">
         <div class="contenido-ventana">
-            <div class="cerrar" id="cerrar-ventana">&times;</div>
+            <button class="cerrar" id="cerrar-ventana">&times;</button>
             <h2>Selecciona Paciente</h2>
             <select id="pacientes">
                 <option value="paciente1">Paciente 1</option>
@@ -81,8 +80,12 @@
             </select>
             <p>Seleccione el método que desea consultar:</p>
             <div class="contenedor-opciones">
-                <div class="opcion">Agendar Cita</div>
-                <div class="opcion">Citas Programadas</div>
+                <a href="/HTML/Citas/agendarcita.html">
+                    <div class="opcion">Agendar Cita</div>
+                </a>
+                <a href="/HTML/Citas/citaprogramada.html">
+                    <div class="opcion">Citas Programadas</div>
+                </a>
             </div>
         </div>
     </div>
@@ -90,12 +93,16 @@
     <!-- Ventana de Historial Clínico -->
     <div id="ventana-historial" class="ventana">
         <div class="contenido-ventana">
-            <div class="cerrar" id="cerrar-ventana-historial">&times;</div>
+            <button class="cerrar" id="cerrar-ventana-historial">&times;</button>
             <h2>Historial Clínico</h2>
             <p>Seleccione qué método desea consultar:</p>
             <div class="contenedor-opciones">
-                <div class="opcion">Solicita el historial en formato PDF</div>
-                <div class="opcion">Accede al historial en línea</div>
+                <a href="#">
+                    <div class="opcion">Solicita el historial en formato PDF</div>
+                </a>
+                <a href="#">
+                    <div class="opcion">Accede al historial en línea</div>
+                </a>
             </div>
         </div>
     </div>
@@ -103,14 +110,13 @@
     <!-- Ventana de Perfil -->
     <div id="ventana-perfil" class="ventana">
         <div class="contenido-ventana">
-            <div class="cerrar" id="cerrar-ventana-perfil">&times;</div>
+            <button class="cerrar" id="cerrar-ventana-perfil">&times;</button>
             <h2>Perfil de Usuario</h2>
             <p>Nombre: <span id="perfil-nombre">JHON JAIRO</span></p>
             <p>Email: ejemplo@correo.com</p>
             <p>Teléfono: 123-456-7890</p>
             <p>Fecha Nacimiento: 06/09/2004</p>
             <p>RH: O+</p>
-            <p></p>
         </div>
     </div>
 </body>

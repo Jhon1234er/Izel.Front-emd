@@ -1,0 +1,157 @@
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #011f30; /* Azul oscuro */
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.encabezado-centro h1 {
+    font-size: 22px;
+    margin: 0;
+    text-align: center;
+}
+
+.encabezado-izquierda a {
+    text-decoration: none;
+    color: #6AC1B8;
+    font-size: 14px;
+}
+
+.encabezado-izquierda a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Contenido */
+.contenido__agenda {
+    margin-top: 20px;
+    width: 90%;
+    max-width: 1000px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+thead {
+    background-color: #013857;
+    color: #fff;
+    text-align: center;
+}
+
+thead th {
+    padding: 10px;
+}
+
+tbody tr {
+    background-color: #f5f5f5;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    background-color: #e7f1f1;
+}
+
+tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilo para las filas de citas */
+.cita--uno, .cita--dos, .cita--tres, .cita--cuatro, .cita--cinco, .cita--seis, .cita--siete {
+    transition: background-color 0.3s ease;
+}
+
+.texto--ayuda td {
+    background-color: #013857;
+    color: #fff;
+    padding: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Modales */
+.ventana-confirmacion, .modal-detalle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.ventana-confirmacion.active, .modal-detalle.active {
+    display: flex;
+}
+
+.contenedor-ventana {
+    background-color: #fff;
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #011f30;
+}
+
+h2 {
+    font-size: 22px;
+    color: #013857;
+    margin-bottom: 20px;
+}
+
+.contenedor-ventana p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contenedor-ventana a, .contenedor-ventana button {
+    background-color: #013857;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.contenedor-ventana a:hover, .contenedor-ventana button:hover {
+    background-color: #6AC1B8;
+}

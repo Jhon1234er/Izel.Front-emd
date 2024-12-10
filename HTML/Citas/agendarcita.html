@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IZEL-AGENDAR</title>
+    <link rel="stylesheet" href="/CSS/agendarcita.css">
+    <script src="/JAVASCRIP/agendarcita.js"></script>
+</head>
+<body>
+    <header>
+        <div class="encabezado-centro">
+            <h1>PROCESO AGENDAR CITA MEDICA</h1>
+        </div>
+        <div class="encabezado-izquierda">
+            <a href="/HTML/Usuario/principal.html">Cancelar Proceso</a>
+        </div>
+    </header>
+
+    <div class="contenido__agenda">
+        <div class="contenedor">
+            <table>
+                <thead>
+                    <tr class="linea__semana">
+                        <th>Medico</th>
+                        <th>Especialidad</th>
+                        <th>Lugar</th>
+                        <th>Dia/Fecha</th>
+                        <th>Hora</th>
+                        <th>Detalles</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="contenido__agenda cita--uno" onclick="abrirModal('modal-cita-1')">
+                        <td>Martin Estrada</td>
+                        <td>Odontologia</td>
+                        <td>Ventura</td>
+                        <td>Lunes 13-Enero-2025</td>
+                        <td>06:30 A.M</td>
+                        <td><a href="#">Solicitar Cita</a></td>
+                    </tr>
+                    <tr class="contenido__agenda cita--dos" onclick="abrirModal('modal-cita-2')">
+                        <td>Jhon Cortes</td>
+                        <td>General</td>
+                        <td>Titan Plaza</td>
+                        <td>Martes 17-Enero-2025</td>
+                        <td>10:00 A.M</td>
+                        <td><a href="#">Solicitar Cita</a></td>
+                    </tr>
+                    <tr class="contenido__agenda cita--tres" onclick="abrirModal('modal-cita-3')">
+                        <td>Prueba</td>
+                        <td>Prueba</td>
+                        <td>Gran Plaza</td>
+                        <td>20-Febrero-2025</td>
+                        <td>01:50 P.M</td>
+                        <td><a href="#">Solicitar Cita</a></td>
+                    </tr>
+                    <tr class="contenido__agenda cita--cuatro" onclick="abrirModal('modal-cita-4')">
+                        <td>Prueba</td>
+                        <td>Prueba</td>
+                        <td>Mercurio</td>
+                        <td>10-Febrero-2025</td>
+                        <td>06:30 P.M</td>
+                        <td><a href="#">Solicitar Cita</a></td>
+                    </tr>
+                    <tr class="contenido__agenda cita--cinco" onclick="abrirModal('modal-cita-5')">
+                        <td>Prueba</td>
+                        <td>Prueba</td>
+                        <td>Ventura</td>
+                        <td>07-Enero-2025</td>
+                        <td>06:00 A.M</td>
+                        <td><a href="#">Solicitar Cita</a></td>
+                    </tr>
+                    <tr class="contenido__agenda cita--seis" onclick="abrirModal('modal-cita-6')">
+                        <td>Prueba</td>
+                        <td>Prueba</td>
+                        <td>Mercurio</td>
+                        <td>18-Enero-2025</td>
+                        <td>12:00 A.M</td>
+                        <td><a href="#">Solicitar Cita</a></td>
+                    </tr>
+                    <tr class="contenido__agenda cita--siete" onclick="abrirModal('modal-cita-7')">
+                        <td>Prueba</td>
+                        <td>Prueba</td>
+                        <td>Ventura</td>
+                        <td>24-Enero-2025</td>
+                        <td>02:30 P.M</td>
+                        <td><a href="#">Solicitar Cita</a></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr class="contenido__agenda texto--ayuda">
+                        <td colspan="5">Este es un punto de vista de como se reflejaria nuestra manera de agendar citas medicas - cualquier tipo de detalle sobre la cita sera dado cuando terminen este proceso </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <!-- Modal 1 -->
+    <div id="modal-cita-1" class="ventana" style="display:none;">
+        <div class="contenedor-ventana">
+            <div class="cerrar" onclick="cerrarModal('modal-cita-1')">&times;</div>
+            <h2>Detalles de la Cita</h2>
+            <p>Medico: Martin Estrada</p>
+            <td>Especialidad: Odontologia</td>
+            <p>Lugar: Ventura</p>
+            <p>Fecha: Enero 2025</p>
+            <p>Hora: 06:30 A.M</p>
+            <button onclick="abrirModal('modal-confirmacion')">Confirmar Cita</button>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal-cita-2" class="ventana" style="display:none;">
+        <div class="contenedor-ventana">
+            <div class="cerrar" onclick="cerrarModal('modal-cita-2')">&times;</div>
+            <h2>Detalles de la Cita</h2>
+            <p>Medico: Jhon Cortes</p>
+            <td>Especialidad: General</td>
+            <p>Lugar: Titan Plaza</p>
+            <p>Fecha: Enero 2025</p>
+            <p>Hora: 10:00 A.M</p>
+            <button onclick="abrirModal('modal-confirmacion')">Confirmar Cita</button>
+        </div>
+    </div>
+
+    <!-- Modal Confirmación -->
+    <div id="modal-confirmacion" class="ventana" style="display:none;">
+        <div class="contenedor-ventana">
+            <div class="cerrar" onclick="cerrarModal('modal-confirmacion')">&times;</div>
+            <h2>CITA AGENDADA EXITOSAMENTE</h2>
+            <p>Para más información, ingrese a la opción Citas Programadas.</p>
+            <a href="/HTML/Usuario/principal.html">Finalizar</a>
+        </div>
+    </div>
+
+</body>
+</html>
