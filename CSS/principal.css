@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #011f30; /* Azul oscuro */
+    color: #fff;
+    padding: 15px;
+}
+
+.encabezado-izquierda h1 {
+    font-family:'Zilla Slab Highlight', serif ;
+    font-size: 18px;
+    margin: 0;
+}
+
+.encabezado-derecha {
+    position: relative;
+}
+
+.icono-perfil {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icono-perfil img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Estilo para las opciones de perfil */
+.opciones-perfil {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    min-width: 120px;
+}
+
+.icono-perfil:hover .opciones-perfil {
+    display: block;
+}
+
+.opciones-perfil ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.opciones-perfil ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.opciones-perfil ul li a {
+    text-decoration: none;
+    color: #011f30;
+}
+
+/* Modificar iconos del footer y otros iconos */
+footer .contenido-pie .iconos img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1); /* Iconos blancos en el footer */
+}
+
+footer .contenido-pie .iconos a:hover img {
+    filter: brightness(0.8) invert(1); /* Efecto hover */
+}
+
+/* Contenedores CITAS MÉDICAS y HISTORIAL CLÍNICO */
+.contenido__panel {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    display: flex;
+    gap: 30px;
+}
+
+.caja {
+    background-color: #fff;
+    padding: 30px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.caja h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Estadísticas */
+.estadisticas {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.estadisticas h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cajas-estadisticas {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.caja-estadistica {
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.caja-estadistica h3 {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.caja-estadistica p {
+    font-size: 14px;
+}
+
+/* Colores de los cuadros */
+.roja {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.rosa {
+    background-color: #f39c12;
+    color: white;
+}
+
+.verde {
+    background-color: #2ecc71;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Asegura que el pie esté al final */
+}
+
+footer .contenido-pie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .contenido-pie .informacion p {
+    margin: 0;
+}
+
+/* Modales */
+.ventana {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.ventana.active {
+    display: flex;
+}
+
+.contenido-ventana {
+    background-color: #fff;
+    width: 400px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.contenedor-opciones {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.opcion {
+    background-color: #013857; /* Azul intermedio */
+    padding: 15px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.opcion:hover {
+    background-color: #6AC1B8; /* Azul claro */
+}

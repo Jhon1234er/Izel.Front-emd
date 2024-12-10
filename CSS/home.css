@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5; /* Fondo gris suave */
+    font-size: 16px;
+}
+
+/* Encabezado */
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #011f30; /* Azul más oscuro que combina con el pie de página */
+    border-bottom: 2px solid #013857; /* Borde que conecta visualmente con el footer */
+    position: relative;
+}
+
+header h1 {
+    font-size: 35px;
+    font-weight: bold;
+    color: #ffffff; /* Texto blanco */
+    font-family: 'Zilla Slab Highlight', serif; /* Fuente personalizada */
+}
+
+header .acceder {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: 1px solid #ffffff; /* Borde blanco para mayor contraste */
+    border-radius: 5px;
+    background-color: #013857; /* Azul del pie de página */
+    cursor: pointer;
+    color: #ffffff; /* Texto blanco */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header .acceder:hover {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #013857; /* Texto azul oscuro */
+}
+
+
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #FFFFFF; /* Fondo blanco limpio para la sección */
+}
+
+.contenedor .contenedor-caja {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd; /* Borde gris suave */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff; /* Fondo blanco */
+    color: #333; /* Texto oscuro para contraste */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.contenedor .boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor .boton button {
+    padding: 10px 30px;
+    font-size: 16px;
+    border: 1px solid #ddd; /* Borde gris suave */
+    background-color: #A8D8B9; /* Verde suave */
+    color: #333; /* Texto oscuro */
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: all 0.3s ease;
+}
+
+.contenedor .boton button:hover {
+    background-color: #6AC1B8; /* Azul más oscuro al pasar el cursor */
+}
+
+/* Pie de página */
+/* Footer */
+footer {
+    background-color: #013857; /* Azul oscuro */
+    color: #ffffff; /* Texto blanco */
+    padding: 20px 40px;
+}
+
+.footer__contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+    gap: 20px;
+}
+
+.footer__redes {
+    text-align: center;
+}
+
+.footer__redes p {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer__redes a {
+    margin: 0 10px;
+    
+}
+
+.footer__redes a img {
+    width: 25px; /* Tamaño fijo de los íconos */
+    height: 25px;
+    object-fit: contain; /* Asegura que las imágenes se ajusten correctamente */
+    filter: brightness(0) invert(1); /* Convierte los colores a blanco */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Incluye la animación del filtro */
+}
+
+.footer__redes a img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño ligeramente al pasar el cursor */
+    filter: brightness(1) invert(0.8); /* Reduce la intensidad al pasar el cursor */
+}
+
+.footer__informacion {
+    text-align: center;
+    font-size: 14px;
+    color: #dddddd; /* Gris claro para el texto */
+}
+
+.footer__informacion p {
+    margin: 0; /* Elimina márgenes adicionales */
+    line-height: 1.5; /* Mejora la legibilidad */
+}

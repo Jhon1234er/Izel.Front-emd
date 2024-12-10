@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izel</title>
+    <link rel="stylesheet" href="/CSS/principal.css">
+    <script src="/JAVASCRIP/principal.js" ></script>
+</head>
+<body>
+
+    <header>
+        <div class="encabezado-izquierda">
+            <h1>BIENVENIDO A IZEL - <span id="nombre-usuario">JHON JAIRO</span></h1>
+        </div>
+        <div class="encabezado-derecha">
+            <div class="icono-perfil">
+                <img src="/ICONOS/usuario.png" alt="Perfil">
+                <div class="opciones-perfil">
+                    <ul>
+                        <li><a href="#" id="ver-perfil">Ver Perfil</a></li>
+                        <li><a href="/HTML/home.html">Cerrar Sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenido__panel">
+        <div class="contenedor">
+            <div class="caja citas-medicas" id="citas-medicas">
+                <h2>CITAS MÉDICAS</h2>
+            </div>
+            <div class="caja historial-clinico" id="historial-clinico">
+                <h2>HISTORIAL CLÍNICO</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="estadisticas">
+        <h2>Estadísticas de Citas</h2>
+        <div class="cajas-estadisticas">
+            <div class="caja-estadistica roja">
+                <h3>Cita Perdida</h3>
+                <p>Rojo indica citas que fueron perdidas.</p>
+            </div>
+            <div class="caja-estadistica rosa">
+                <h3>Cita Pospuesta</h3>
+                <p>Rosado indica citas que fueron pospuestas.</p>
+            </div>
+            <div class="caja-estadistica verde">
+                <h3>Cita Realizada</h3>
+                <p>Verde indica citas que fueron realizadas.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="contenido-pie">
+            <div class="iconos">
+                <a href="#"><img src="/ICONOS/logo-de-facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="/ICONOS/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="/ICONOS/gorjeo.png" alt="Twitter"></a>
+                <a href="#"><img src="/ICONOS/youtube.png" alt="YouTube"></a>
+            </div>
+            <div class="informacion">
+                <p>Información | Sede Principal | Teléfono de Contacto</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Ventana de Citas Médicas -->
+    <div id="ventana-citas" class="ventana">
+        <div class="contenido-ventana">
+            <div class="cerrar" id="cerrar-ventana">&times;</div>
+            <h2>Selecciona Paciente</h2>
+            <select id="pacientes">
+                <option value="paciente1">Paciente 1</option>
+                <option value="paciente2">Paciente 2</option>
+                <option value="paciente3">Paciente 3</option>
+            </select>
+            <p>Seleccione el método que desea consultar:</p>
+            <div class="contenedor-opciones">
+                <div class="opcion">Agendar Cita</div>
+                <div class="opcion">Citas Programadas</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ventana de Historial Clínico -->
+    <div id="ventana-historial" class="ventana">
+        <div class="contenido-ventana">
+            <div class="cerrar" id="cerrar-ventana-historial">&times;</div>
+            <h2>Historial Clínico</h2>
+            <p>Seleccione qué método desea consultar:</p>
+            <div class="contenedor-opciones">
+                <div class="opcion">Solicita el historial en formato PDF</div>
+                <div class="opcion">Accede al historial en línea</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ventana de Perfil -->
+    <div id="ventana-perfil" class="ventana">
+        <div class="contenido-ventana">
+            <div class="cerrar" id="cerrar-ventana-perfil">&times;</div>
+            <h2>Perfil de Usuario</h2>
+            <p>Nombre: <span id="perfil-nombre">JHON JAIRO</span></p>
+            <p>Email: ejemplo@correo.com</p>
+            <p>Teléfono: 123-456-7890</p>
+            <p>Fecha Nacimiento: 06/09/2004</p>
+            <p>RH: O+</p>
+            <p></p>
+        </div>
+    </div>
+</body>
+</html>
