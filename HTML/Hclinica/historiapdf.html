@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izel</title>
+    <link rel="stylesheet" href="/CSS/historiapdf.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="contenedor">
+        <div class="contenedor-caja">
+            <h1 class="contenedor-caja--Titulo">Solicitud Historia Clinica</h1>
+            <a href="/HTML/Usuario/principal.html" class="contenedor-caja--Icono">Cancelar Proceso</a>
+        </div>
+    </header>
+
+    <!-- Contenedor Central -->
+    <div class="contenedor-central">
+        <div class="contenedor-central--caja">
+            <p>Apreciado JHON JAIRO CORTES SARMIENTO, a través de esta opción podrás solicitar la copia de su historia clínica o la de
+                algún integrante de tu grupo familiar que sea menor de edad. Esta historia contemplará las
+                atenciones médicas realizadas en las sedes de la IPS.
+            </p>
+            <div class="contenedor-central-boton">
+                <a href="#" id="continuar-btn">Continuar</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenedor Dos (Modal) -->
+    <div class="contenedor-dos modal" id="contenedor-dos">
+        <div class="contenedor-dos--caja">
+            <h2>Confirmacion de datos</h2>
+            <input type="text" readonly value="JHON JAIRO CORTES SARMIENTO">
+            <select id="tipodoc">
+                <option value="tipodoc1">CC.</option>
+                <option value="tipodoc2">T.I</option>
+            </select>
+            <input type="text" readonly value="1073670258">
+            <input type="text" readonly value="3125279858">
+            <input type="text" readonly value="jhoncortes876@gmail.com">
+            <p>Seleccione fechas de atenciones</p>
+            <label for="Inicio">FECHA INICIO</label>
+            <input type="date" id="Inicio" name="Inicio">
+            <label for="Final">FECHA FINAL</label>
+            <input type="date" id="Final" name="Final">
+            <button id="radicar-btn">Radicar Solicitud</button>
+        </div>
+    </div>
+
+    <!-- Contenedor Tres -->
+    <div class="contenedor-tres modal" id="contenedor-tres">
+        <div class="contenedor-tres--caja">
+            <h2>Su solicitud fue radicada exitosamente</h2>
+            <p>Numero De Solicitud</p>
+            <p>E7863652652</p>
+            <img src="/ICONOS/lista-de-verificacion.png" alt="Verificacion" class="icono-verificacion">
+            <button id="finalizar-btn">Finalizar</button>
+        </div>
+    </div>
+
+    <script src="/JAVASCRIP/historiapdf.js" ></script>
+</body>
+</html>
