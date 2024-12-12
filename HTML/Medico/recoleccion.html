@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izel</title>
+    <link rel="stylesheet" href="/CSS/Medico/recoleccion.css">
+</head>
+<body>
+    
+    <div class="contenedor-datos">
+        <h2>RECOLECCION DE DATOS</h2>
+        <div class="contenedor-datos__detalles">
+            <label for="fuma" class="contenedor-datos__etiqueta">FUMA</label>
+            <select id="fuma" class="contenedor-datos__seleccion">
+                <option value="fuma1">Si</option>
+                <option value="fuma2">No</option>
+            </select>
+            <label for="sexual" class="contenedor-datos__etiqueta">Es sexualmente activo</label>
+            <select id="sexual" class="contenedor-datos__seleccion">
+                <option value="sexual1">Si</option>
+                <option value="sexual2">No</option>
+            </select>
+            <input type="text" name="imc" id="imc" class="contenedor-datos__entrada" readonly value="IMC">
+            <input type="text" name="peso" id="peso" class="contenedor-datos__entrada" readonly value="Peso (kg)">
+            <input type="text" name="talla" id="talla" class="contenedor-datos__entrada" readonly value="Talla (cm)">
+            <input type="text" name="sistolica" id="sistolica" class="contenedor-datos__entrada" readonly value="Tensión arterial sistólica">
+            <input type="text" name="diastolica" id="diastolica" class="contenedor-datos__entrada" readonly value="Tensión arterial diastólica">
+            <label for="fecha" class="contenedor-datos__etiqueta">(Si es mujer) Última menstruación</label>
+            <input type="date" name="fecha" id="fecha" class="contenedor-datos__entrada">
+            <form class="contenedor-datos__formulario">
+                <label for="texto-largo1" class="contenedor-datos__etiqueta">Motivo Consulta:</label>
+                <textarea id="texto-largo1" name="texto-largo1" class="contenedor-datos__textarea" placeholder="Escribe el motivo de la consulta del paciente acá..."></textarea>
+            </form>
+            <form class="contenedor-datos__formulario">
+                <label for="texto-largo2" class="contenedor-datos__etiqueta">Reconocimiento:</label>
+                <textarea id="texto-largo2" name="texto-largo2" class="contenedor-datos__textarea" placeholder="Escribe el reconocimiento del paciente acá..."></textarea>
+            </form>
+            <form class="contenedor-datos__formulario">
+                <label for="texto-largo3" class="contenedor-datos__etiqueta">Diagnóstico:</label>
+                <textarea id="texto-largo3" name="texto-largo3" class="contenedor-datos__textarea" placeholder="Escribe el diagnóstico del paciente acá..."></textarea>
+            </form>
+            <a href="/HTML/Medico/final.html">
+                <button class="contenedor-datos__boton">Continuar</button>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

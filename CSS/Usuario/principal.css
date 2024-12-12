@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -11,12 +10,12 @@ body {
     flex-direction: column;
 }
 
-/* Header */
+/* Encabezado */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #011f30; /* Azul oscuro */
+    background-color: #011f30; 
     color: #fff;
     padding: 15px;
 }
@@ -44,7 +43,7 @@ header {
     margin-right: 10px;
 }
 
-/* Estilo para las opciones de perfil */
+/* Perfil */
 .opciones-perfil {
     position: absolute;
     right: 0;
@@ -75,18 +74,18 @@ header {
     color: #011f30;
 }
 
-/* Modificar iconos del footer y otros iconos */
+/* Iconos */
 footer .contenido-pie .iconos img {
     width: 20px;
     height: 20px;
-    filter: brightness(0) invert(1); /* Iconos blancos en el footer */
+    filter: brightness(0) invert(1); 
 }
 
 footer .contenido-pie .iconos a:hover img {
-    filter: brightness(0.8) invert(1); /* Efecto hover */
+    filter: brightness(0.8) invert(1); 
 }
 
-/* Contenedores CITAS MÉDICAS y HISTORIAL CLÍNICO */
+/*CITAS MÉDICAS y HISTORIAL CLÍNICO */
 .contenido__panel {
     margin-top: 20px;
     display: flex;
@@ -148,7 +147,7 @@ footer .contenido-pie .iconos a:hover img {
     font-size: 14px;
 }
 
-/* Colores de los cuadros */
+/* Cuadros Estadistica */
 .roja {
     background-color: #e74c3c;
     color: white;
@@ -164,13 +163,13 @@ footer .contenido-pie .iconos a:hover img {
     color: white;
 }
 
-/* Footer */
+/* Pie de pagina */
 footer {
     background-color: #2c3e50;
     color: #fff;
     padding: 20px;
     text-align: center;
-    margin-top: auto; /* Asegura que el pie esté al final */
+    margin-top: auto;
 }
 
 footer .contenido-pie {
@@ -183,7 +182,7 @@ footer .contenido-pie .informacion p {
     margin: 0;
 }
 
-/* Modales */
+/* Ventana */
 .ventana {
     position: fixed;
     top: 0;
@@ -230,7 +229,7 @@ select {
 }
 
 .opcion {
-    background-color: #013857; /* Azul intermedio */
+    background-color: #013857; 
     padding: 15px;
     color: #fff;
     cursor: pointer;
@@ -239,5 +238,5 @@ select {
 }
 
 .opcion:hover {
-    background-color: #6AC1B8; /* Azul claro */
+    background-color: #6AC1B8; 
 }

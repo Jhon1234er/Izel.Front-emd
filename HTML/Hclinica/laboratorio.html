@@ -1,87 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Izel</title>
-    <link rel="stylesheet" href="/CSS/laboratorio.css">
+    <link rel="stylesheet" href="/CSS/Hclinica/laboratorio.css">
 </head>
 <body>
-    <header>
-        <div>
-            <h1>LABORATORIO</h1>
+    <header class="encabezado">
+        <div class="encabezado__contenedor">
+            <h1 class="encabezado__titulo">LABORATORIO</h1>
         </div>
     </header>
 
-    <div class="barra-lateral">
-        <a href="/HTML/Hclinica/historiaonly.html" class="inicio" title="Inicio">
+    <div class="barra__lateral">
+        <a href="/HTML/Hclinica/historiaonly.html" class="barra__icono--inicio" title="Inicio">
             <img src="/ICONOS/casa.png" alt="Icono de Inicio">
         </a>
-        <a href="/HTML/Hclinica/radiografias.html" class="rayosx" title="Rayos X">
+        <a href="/HTML/Hclinica/radiografias.html" class="barra__icono--rayos-x" title="Rayos X">
             <img src="/ICONOS/rx.png" alt="Icono de Rayos X">
         </a>
-        <a href="/HTML/Hclinica/laboratorio.html" class="laboratorio" title="Laboratorio">
+        <a href="/HTML/Hclinica/laboratorio.html" class="barra__icono--laboratorio" title="Laboratorio">
             <img src="/ICONOS/jeringuilla.png" alt="Icono de Laboratorio">
         </a>
-        <a href="/HTML/Hclinica/medicamentos.html" class="medicamentos" title="Medicamentos">
+        <a href="/HTML/Hclinica/medicamentos.html" class="barra__icono--medicamentos" title="Medicamentos">
             <img src="/ICONOS/medicamento.png" alt="Icono de Medicamentos">
         </a>
-        <a href="/HTML/Hclinica/datos.html" class="antropologicos" title="Antropológicos">
+        <a href="/HTML/Hclinica/datos.html" class="barra__icono--antropologicos" title="Antropológicos">
             <img src="/ICONOS/prueba-de-rayos-x.png" alt="Icono de Antropológicos">
         </a>
-        <a href="/HTML/Hclinica/atenciones.html" class="atenciones" title="Atenciones">
+        <a href="/HTML/Hclinica/atenciones.html" class="barra__icono--atenciones" title="Atenciones">
             <img src="/ICONOS/doctor.png" alt="Icono de Atenciones">
         </a>
     </div>
 
-    <div>
-        <h2>DIAGNOSTICOS DE LABORATORIO</h2>
-        <table>
+    <div class="contenido__principal">
+        <h2 class="contenido__titulo">DIAGNÓSTICOS DE LABORATORIO</h2>
+        <table class="tabla__laboratorio">
             <thead>
                 <tr>
-                    <th>TIPO</th>
-                    <th>EXAMEN</th>
-                    <th>FECHA</th>
-                    <th>DIAGNOSTICO</th>
-                    <th>VISUALIZAR</th>
+                    <th class="tabla__laboratorio--cabecera">TIPO</th>
+                    <th class="tabla__laboratorio--cabecera">EXAMEN</th>
+                    <th class="tabla__laboratorio--cabecera">FECHA</th>
+                    <th class="tabla__laboratorio--cabecera">DIAGNÓSTICO</th>
+                    <th class="tabla__laboratorio--cabecera">VISUALIZAR</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>Examen de sangre</td>
-                    <td>Hemoglobina</td>
-                    <td>02-Octubre-23</td>
-                    <td>Desconocido</td>
-                    <td>NO DISPONIBLE</td>
+                    <td class="tabla__laboratorio--celda-1">Examen de sangre</td>
+                    <td class="tabla__laboratorio--celda-2">Hemoglobina</td>
+                    <td class="tabla__laboratorio--celda-3">02-Octubre-23</td>
+                    <td class="tabla__laboratorio--celda-4">Desconocido</td>
+                    <td class="tabla__laboratorio--celda-5">NO DISPONIBLE</td>
                 </tr>
                 <tr>
-                    <td>--</td>
-                    <td>--</td>
-                    <td>--</td>
-                    <td>--</td>
-                    <td>--</td>
+                    <td class="tabla__laboratorio--celda-1">--</td>
+                    <td class="tabla__laboratorio--celda-2">--</td>
+                    <td class="tabla__laboratorio--celda-3">--</td>
+                    <td class="tabla__laboratorio--celda-4">--</td>
+                    <td class="tabla__laboratorio--celda-5">--</td>
                 </tr>
                 <tr>
-                    <td>--</td>
-                    <td>--</td>
-                    <td>--</td>
-                    <td>--</td>
-                    <td>--</td>
+                    <td class="tabla__laboratorio--celda-1">--</td>
+                    <td class="tabla__laboratorio--celda-2">--</td>
+                    <td class="tabla__laboratorio--celda-3">--</td>
+                    <td class="tabla__laboratorio--celda-4">--</td>
+                    <td class="tabla__laboratorio--celda-5">--</td>
                 </tr>
                 <tr>
-                    <td>--</td>
-                    <td>--</td>
-                    <td>--</td>
-                    <td>--</td>
-                    <td>--</td>
+                    <td class="tabla__laboratorio--celda-1">--</td>
+                    <td class="tabla__laboratorio--celda-2">--</td>
+                    <td class="tabla__laboratorio--celda-3">--</td>
+                    <td class="tabla__laboratorio--celda-4">--</td>
+                    <td class="tabla__laboratorio--celda-5">--</td>
                 </tr>
             </tbody>
             <tfoot>
                 <tr>
-                    <td colspan="5">Este cuadro tendra ocupado toda la pantalla en el cual se almacenaran toda la informacion relacionada por el momento solo mostramos como se veria la informacion</td>
+                    <td colspan="5" class="tabla__laboratorio--pie">Este cuadro tendrá ocupado toda la pantalla en el cual se almacenarán toda la información relacionada; por el momento solo mostramos cómo se vería la información.</td>
                 </tr>
             </tfoot>
         </table>
     </div>
 </body>
-</html>    
+</html>

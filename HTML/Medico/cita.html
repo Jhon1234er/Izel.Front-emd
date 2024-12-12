@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IZEL</title>
+    <link rel="stylesheet" href="/CSS/Medico/cita.css">
+</head>
+<body>
+    
+    <div class="contenedor-datos">
+        <h2 class="contenedor-datos__titulo">DATOS DEL PACIENTE</h2>
+        <div class="contenedor-datos__detalles">
+            <label for="tipodoc" class="contenedor-datos__etiqueta">Tipo de Documento</label>
+            <select id="tipodoc" class="contenedor-datos__campo">
+                <option value="tipodoc1">CC.</option>
+                <option value="tipodoc2">T.I</option>
+            </select>
+            <label for="numdoc" class="contenedor-datos__etiqueta">Numero de Documento</label>
+            <input type="text" name="numdoc" id="numdoc" class="contenedor-datos__campo" readonly value="1073670258">
+            <label for="nombre" class="contenedor-datos__etiqueta">Nombres</label>
+            <input type="text" name="nombre" id="nombre" class="contenedor-datos__campo" readonly value="Jhon Jairo">
+            <label for="apellido" class="contenedor-datos__etiqueta">Apellidos</label>
+            <input type="text" name="apellido" id="apellido" class="contenedor-datos__campo" readonly value="Cortes Sarmiento">
+            <label for="fechanacimiento" class="contenedor-datos__etiqueta">Fecha de Nacimiento</label>
+            <input type="date" name="fechanacimiento" id="fechanacimiento" class="contenedor-datos__campo">
+            <label for="edad" class="contenedor-datos__etiqueta">Edad</label>
+            <input type="text" name="edad" id="edad" class="contenedor-datos__campo" readonly value="19 Años">
+            <label for="genero" class="contenedor-datos__etiqueta">Genero</label>
+            <select id="genero" class="contenedor-datos__campo">
+                <option value="genero1">Masculino</option>
+                <option value="genero2">Femenino</option>
+            </select>
+            <label for="direccion" class="contenedor-datos__etiqueta">Direccion</label>
+            <input type="text" name="direccion" id="direccion" class="contenedor-datos__campo" readonly value="Crra 10A #43-13B">
+            <label for="departamento" class="contenedor-datos__etiqueta">Departamento</label>
+            <input type="text" name="departamento" id="departamento" class="contenedor-datos__campo" readonly value="Cundinamarca">
+            <label for="ciudad" class="contenedor-datos__etiqueta">Ciudad</label>
+            <input type="text" name="ciudad" id="ciudad" class="contenedor-datos__campo" readonly value="Soacha">
+            <label for="telefono" class="contenedor-datos__etiqueta">Telefono</label>
+            <input type="text" name="telefono" id="telefono" class="contenedor-datos__campo" readonly value="3122579854">
+            <label for="correo" class="contenedor-datos__etiqueta">Correo</label>
+            <input type="text" name="correo" id="correo" class="contenedor-datos__campo" readonly value="jhoncortes876@gmail.com">
+            <label for="ocupacion" class="contenedor-datos__etiqueta">Ocupacion</label>
+            <input type="text" name="ocupacion" id="ocupacion" class="contenedor-datos__campo" readonly value="Estudiante">
+        </div>
+    </div>
+
+    <div class="contenedor-notas">
+        <div class="contenedor-notas__formulario">
+            <form>
+                <label for="texto-largo" class="contenedor-notas__etiqueta">NOTAS:</label>
+                <textarea id="texto-largo" name="texto-largo" class="contenedor-notas__campo" placeholder="Escribe las notas del paciente aca..."></textarea>
+            </form>
+        </div>
+    </div>
+
+    <div class="contenedor-boton">
+        <a href="/HTML/Medico/atenciones.html" class="contenedor-boton__enlace">
+            <button class="contenedor-boton__boton">Continuar</button>
+        </a>
+    </div>
+
+</body>
+</html>

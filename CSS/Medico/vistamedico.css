@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Encabezado */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #011f30; 
+    color: #fff;
+    padding: 15px;
+}
+
+.encabezado-izquierda h1 {
+    font-family:'Zilla Slab Highlight', serif ;
+    font-size: 18px;
+    margin: 0;
+}
+
+.encabezado-derecha {
+    position: relative;
+}
+
+.icono-perfil {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icono-perfil img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Perfil */
+.opciones-perfil {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    min-width: 120px;
+}
+
+.icono-perfil:hover .opciones-perfil {
+    display: block;
+}
+
+.opciones-perfil ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.opciones-perfil ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.opciones-perfil ul li a {
+    text-decoration: none;
+    color: #011f30;
+}
+
+/* Tabla */
+h2 {
+    font-family:'Zilla Slab Highlight', serif;
+    text-align: center;
+    margin-top: 20px;
+    color: #011f30; 
+    font-size: 1.8rem;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    background-color: #ffffff; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 15%; 
+}
+
+thead th {
+    background-color: #013857; 
+    color: #ffffff; 
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+tbody tr {
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0; 
+}
+
+tbody td {
+    padding: 10px 15px;
+    color: #333; 
+    font-size: 1rem;
+}
+
+tfoot td {
+    padding: 20px;
+    font-style: italic;
+    color: white;
+    text-align: center;
+    background-color: #013857; 
+}
+
+tbody tr:hover {
+    background-color: #e0e0e0; 
+}
+
+/*  Iconos  */
+footer .contenido-pie .iconos img {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1); 
+}
+
+footer .contenido-pie .iconos a:hover img {
+    filter: brightness(0.8) invert(1); 
+}
+
+/* Pie de pagina */
+footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; 
+}
+
+footer .contenido-pie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .contenido-pie .informacion p {
+    margin: 0;
+}

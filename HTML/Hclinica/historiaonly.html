@@ -4,74 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IZEL</title>
-    <link rel="stylesheet" href="/CSS/historiaonly.css">
+    <link rel="stylesheet" href="/CSS/Hclinica/historiaonly.css">
 </head>
 <body>
-    <header>
-        <h1><a href="/HTML/Usuario/principal.html">IZEL</a></h1>
+    <header class="Encabezado">
+        <h1 class="Encabezado__titulo"><a href="/HTML/Usuario/principal.html" class="Encabezado__enlace">IZEL</a></h1>
     </header>
 
-    <div class="barra-lateral">
-        <a href="/HTML/Hclinica/historiaonly.html" class="inicio" title="Inicio">
-            <img src="/ICONOS/casa.png" alt="Icono de Inicio">
+    <div class="barra__lateral">
+        <a href="/HTML/Hclinica/historiaonly.html" class="columna barra__icono--inicio" title="Inicio">
+            <img src="/ICONOS/casa.png" alt="Icono de Inicio" class="barra__icono">
         </a>
-        <a href="/HTML/Hclinica/radiografias.html" class="rayosx" title="Rayos X">
-            <img src="/ICONOS/rx.png" alt="Icono de Rayos X">
+        <a href="/HTML/Hclinica/radiografias.html" class="columna barra__icono--rayos-x" title="Rayos X">
+            <img src="/ICONOS/rx.png" alt="Icono de Rayos X" class="barra__icono">
         </a>
-        <a href="/HTML/Hclinica/laboratorio.html" class="laboratorio" title="Laboratorio">
-            <img src="/ICONOS/jeringuilla.png" alt="Icono de Laboratorio">
+        <a href="/HTML/Hclinica/laboratorio.html" class="columna barra__icono--laboratorio" title="Laboratorio">
+            <img src="/ICONOS/jeringuilla.png" alt="Icono de Laboratorio" class="barra__icono">
         </a>
-        <a href="/HTML/Hclinica/medicamentos.html" class="medicamentos" title="Medicamentos">
-            <img src="/ICONOS/medicamento.png" alt="Icono de Medicamentos">
+        <a href="/HTML/Hclinica/medicamentos.html" class="columna barra__icono--medicamentos" title="Medicamentos">
+            <img src="/ICONOS/medicamento.png" alt="Icono de Medicamentos" class="barra__icono">
         </a>
-        <a href="/HTML/Hclinica/datos.html" class="antropologicos" title="Antropológicos">
-            <img src="/ICONOS/prueba-de-rayos-x.png" alt="Icono de Antropológicos">
+        <a href="/HTML/Hclinica/datos.html" class="columna barra__icono--antropologicos" title="Antropológicos">
+            <img src="/ICONOS/prueba-de-rayos-x.png" alt="Icono de Antropológicos" class="barra__icono">
         </a>
-        <a href="/HTML/Hclinica/atenciones.html" class="atenciones" title="Atenciones">
-            <img src="/ICONOS/doctor.png" alt="Icono de Atenciones">
+        <a href="/HTML/Hclinica/atenciones.html" class="columna barra__icono--atenciones" title="Atenciones">
+            <img src="/ICONOS/doctor.png" alt="Icono de Atenciones" class="barra__icono">
         </a>
     </div>
 
-
-    <main>
-        <section class="informacion-paciente">
-            <h2>Información Básica del Paciente</h2>
-            <div class="caja-informacion">
-                <p>Nombre: Jhon Jairo Cortes Sarmiento</p>
-                <p>Tipo de Documento: Cédula</p>
-                <p>Número de Documento: 1073670258</p>
-                <p>Fecha de Nacimiento: 06-09-2004</p>
-                <p>Género: Masculino</p>
-                <p>Teléfono: 3125279854</p>
-                <p>Correo: jhoncortes876@gmail.com</p>
-                <p>Ocupación: Estudiante</p>
+    <main class="contenido-principal">
+        <section class="informacion__paciente">
+            <h2 class="informacion__titulo">Información Básica del Paciente</h2>
+            <div class="informacion__caja">
+                <p class="informacion__item">Nombre: Jhon Jairo Cortes Sarmiento</p>
+                <p class="informacion__item">Tipo de Documento: Cédula</p>
+                <p class="informacion__item">Número de Documento: 1073670258</p>
+                <p class="informacion__item">Fecha de Nacimiento: 06-09-2004</p>
+                <p class="informacion__item">Género: Masculino</p>
+                <p class="informacion__item">Teléfono: 3125279854</p>
+                <p class="informacion__item">Correo: jhoncortes876@gmail.com</p>
+                <p class="informacion__item">Ocupación: Estudiante</p>
             </div>
         </section>
 
-        <section class="filtro-fecha">
-            <h2>Seleccionar Rango de Búsqueda</h2>
-            <input type="date">
-            <button>Buscar</button>
-            <p>Rango de tiempo: 2 años</p>
+        <section class="filtro__fecha">
+            <h2 class="filtro__titulo">Seleccionar Rango de Búsqueda</h2>
+            <input type="date" class="filtro__input">
+            <button class="filtro__boton">Buscar</button>
+            <p class="filtro__rango">Rango de tiempo: 2 años</p>
         </section>
 
-        <section class="clasificacion-riesgo">
-            <h2>Riesgo y Clasificación de Riesgo</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Riesgo</th>
-                        <th>Estado del Riesgo</th>
-                        <th>Fecha de Confirmación</th>
-                        <th>Riesgo Clínico</th>
+        <section class="clasificacion__riesgo">
+            <h2 class="clasificacion__titulo">Riesgo y Clasificación de Riesgo</h2>
+            <table class="clasificacion__tabla">
+                <thead class="clasificacion__tabla-cabecera">
+                    <tr class="clasificacion__tabla-fila">
+                        <th class="clasificacion__tabla-celda--1">Riesgo</th>
+                        <th class="clasificacion__tabla-celda--2">Estado del Riesgo</th>
+                        <th class="clasificacion__tabla-celda--3">Fecha de Confirmación</th>
+                        <th class="clasificacion__tabla-celda--4">Riesgo Clínico</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>Diabetes</td>
-                        <td>Confirmado</td>
-                        <td>02/06/2024</td>
-                        <td>Sí/No</td>
+                <tbody class="clasificacion__tabla-cuerpo">
+                    <tr class="clasificacion__tabla-fila">
+                        <td class="clasificacion__tabla-celda--1">Diabetes</td>
+                        <td class="clasificacion__tabla-celda--2">Confirmado</td>
+                        <td class="clasificacion__tabla-celda--3">02/06/2024</td>
+                        <td class="clasificacion__tabla-celda--4">Sí/No</td>
                     </tr>
                 </tbody>
             </table>

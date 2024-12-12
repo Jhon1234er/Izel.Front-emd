@@ -4,88 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IZEL-AGENDAR</title>
-    <link rel="stylesheet" href="/CSS/agendarcita.css">
+    <link rel="stylesheet" href="/CSS/Citas/agendarcita.css">
     <script src="/JAVASCRIP/agendarcita.js"></script>
 </head>
 <body>
-    <header>
+    <header class="encabezado">
         <div class="encabezado-centro">
-            <h1>PROCESO AGENDAR CITA MEDICA</h1>
+            <h1 class="encabezado-titulo">PROCESO AGENDAR CITA MEDICA</h1>
         </div>
         <div class="encabezado-izquierda">
-            <a href="/HTML/Usuario/principal.html">Cancelar Proceso</a>
+            <a class="encabezado-link" href="/HTML/Usuario/principal.html">Cancelar Proceso</a>
         </div>
     </header>
 
     <div class="contenido__agenda">
         <div class="contenedor">
-            <table>
-                <thead>
-                    <tr class="linea__semana">
-                        <th>Medico</th>
-                        <th>Especialidad</th>
-                        <th>Lugar</th>
-                        <th>Dia/Fecha</th>
-                        <th>Hora</th>
-                        <th>Detalles</th>
+            <table class="contenedor-tabla">
+                <thead class="contenedor-cabezera">
+                    <tr class="linea__opcion">
+                        <th class="linea__opcion--1">Medico</th>
+                        <th class="linea__opcion--2">Especialidad</th>
+                        <th class="linea__opcion--3">Lugar</th>
+                        <th class="linea__opcion--4">Dia/Fecha</th>
+                        <th class="linea__opcion--5">Hora</th>
+                        <th class="linea__opcion--6">Detalles</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="contenedor-columnas">
                     <tr class="contenido__agenda cita--uno" onclick="abrirModal('modal-cita-1')">
-                        <td>Martin Estrada</td>
-                        <td>Odontologia</td>
-                        <td>Ventura</td>
-                        <td>Lunes 13-Enero-2025</td>
-                        <td>06:30 A.M</td>
-                        <td><a href="#">Solicitar Cita</a></td>
+                        <td class="contenedor-columnas columna--1">Martin Estrada</td>
+                        <td class="contenedor-columnas columna--2">Odontologia</td>
+                        <td class="contenedor-columnas columna--3">Ventura</td>
+                        <td class="contenedor-columnas columna--4">Lunes 13-Enero-2025</td>
+                        <td class="contenedor-columnas columna--5">06:30 A.M</td>
+                        <td class="contenedor-columnas columna--6"><a href="#">Solicitar Cita</a></td>
                     </tr>
                     <tr class="contenido__agenda cita--dos" onclick="abrirModal('modal-cita-2')">
-                        <td>Jhon Cortes</td>
-                        <td>General</td>
-                        <td>Titan Plaza</td>
-                        <td>Martes 17-Enero-2025</td>
-                        <td>10:00 A.M</td>
-                        <td><a href="#">Solicitar Cita</a></td>
+                        <td class="contenedor-columnas columna--1">Jhon Cortes</td>
+                        <td class="contenedor-columnas columna--2">General</td>
+                        <td class="contenedor-columnas columna--3">Titan Plaza</td>
+                        <td class="contenedor-columnas columna--4">Martes 17-Enero-2025</td>
+                        <td class="contenedor-columnas columna--5">10:00 A.M</td>
+                        <td class="contenedor-columnas columna--6"><a href="#">Solicitar Cita</a></td>
                     </tr>
                     <tr class="contenido__agenda cita--tres" onclick="abrirModal('modal-cita-3')">
-                        <td>Prueba</td>
-                        <td>Prueba</td>
-                        <td>Gran Plaza</td>
-                        <td>20-Febrero-2025</td>
-                        <td>01:50 P.M</td>
-                        <td><a href="#">Solicitar Cita</a></td>
+                        <td class="contenedor-columnas columna--1">Prueba</td>
+                        <td class="contenedor-columnas columna--2">Prueba</td>
+                        <td class="contenedor-columnas columna--3">Gran Plaza</td>
+                        <td class="contenedor-columnas columna--4">20-Febrero-2025</td>
+                        <td class="contenedor-columnas columna--5">01:50 P.M</td>
+                        <td class="contenedor-columnas columna--6"><a href="#">Solicitar Cita</a></td>
                     </tr>
                     <tr class="contenido__agenda cita--cuatro" onclick="abrirModal('modal-cita-4')">
-                        <td>Prueba</td>
-                        <td>Prueba</td>
-                        <td>Mercurio</td>
-                        <td>10-Febrero-2025</td>
-                        <td>06:30 P.M</td>
-                        <td><a href="#">Solicitar Cita</a></td>
+                        <td class="contenedor-columnas columna--1">Prueba</td>
+                        <td class="contenedor-columnas columna--2">Prueba</td>
+                        <td class="contenedor-columnas columna--3">Mercurio</td>
+                        <td class="contenedor-columnas columna--4">10-Febrero-2025</td>
+                        <td class="contenedor-columnas columna--5">06:30 P.M</td>
+                        <td class="contenedor-columnas columna--6"><a href="#">Solicitar Cita</a></td>
                     </tr>
                     <tr class="contenido__agenda cita--cinco" onclick="abrirModal('modal-cita-5')">
-                        <td>Prueba</td>
-                        <td>Prueba</td>
-                        <td>Ventura</td>
-                        <td>07-Enero-2025</td>
-                        <td>06:00 A.M</td>
-                        <td><a href="#">Solicitar Cita</a></td>
+                        <td class="contenedor-columnas columna--1">Prueba</td>
+                        <td class="contenedor-columnas columna--2">Prueba</td>
+                        <td class="contenedor-columnas columna--3">Ventura</td>
+                        <td class="contenedor-columnas columna--4">07-Enero-2025</td>
+                        <td class="contenedor-columnas columna--5">06:00 A.M</td>
+                        <td class="contenedor-columnas columna--6"><a href="#">Solicitar Cita</a></td>
                     </tr>
                     <tr class="contenido__agenda cita--seis" onclick="abrirModal('modal-cita-6')">
-                        <td>Prueba</td>
-                        <td>Prueba</td>
-                        <td>Mercurio</td>
-                        <td>18-Enero-2025</td>
-                        <td>12:00 A.M</td>
-                        <td><a href="#">Solicitar Cita</a></td>
+                        <td class="contenedor-columnas columna--1">Prueba</td>
+                        <td class="contenedor-columnas columna--2">Prueba</td>
+                        <td class="contenedor-columnas columna--3">Mercurio</td>
+                        <td class="contenedor-columnas columna--4">18-Enero-2025</td>
+                        <td class="contenedor-columnas columna--5">12:00 A.M</td>
+                        <td class="contenedor-columnas columna--6"><a href="#">Solicitar Cita</a></td>
                     </tr>
                     <tr class="contenido__agenda cita--siete" onclick="abrirModal('modal-cita-7')">
-                        <td>Prueba</td>
-                        <td>Prueba</td>
-                        <td>Ventura</td>
-                        <td>24-Enero-2025</td>
-                        <td>02:30 P.M</td>
-                        <td><a href="#">Solicitar Cita</a></td>
+                        <td class="contenedor-columnas columna--1">Prueba</td>
+                        <td class="contenedor-columnas columna--2">Prueba</td>
+                        <td class="contenedor-columnas columna--3">Ventura</td>
+                        <td class="contenedor-columnas columna--4">24-Enero-2025</td>
+                        <td class="contenedor-columnas columna--5">02:30 P.M</td>
+                        <td class="contenedor-columnas columna--6"><a href="#">Solicitar Cita</a></td>
                     </tr>
                 </tbody>
                 <tfoot>
@@ -97,7 +97,7 @@
         </div>
     </div>
 
-    <!-- Modal 1 -->
+    <!-- Ventana 1 -->
     <div id="modal-cita-1" class="ventana" style="display:none;">
         <div class="contenedor-ventana">
             <div class="cerrar" onclick="cerrarModal('modal-cita-1')">&times;</div>
@@ -111,7 +111,7 @@
         </div>
     </div>
 
-    <!-- Modal 2 -->
+    <!-- Ventana 2 -->
     <div id="modal-cita-2" class="ventana" style="display:none;">
         <div class="contenedor-ventana">
             <div class="cerrar" onclick="cerrarModal('modal-cita-2')">&times;</div>
@@ -125,7 +125,7 @@
         </div>
     </div>
 
-    <!-- Modal Confirmación -->
+    <!-- Ventana Confirmación -->
     <div id="modal-confirmacion" class="ventana" style="display:none;">
         <div class="contenedor-ventana">
             <div class="cerrar" onclick="cerrarModal('modal-confirmacion')">&times;</div>

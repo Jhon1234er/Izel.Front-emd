@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izel</title>
+    <link rel="stylesheet" href="/CSS/Medico/incapacidad.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <span>IZEL</span>
+        </div>
+        <h1 class="header__title">INCAPACIDAD MEDICA</h1>
+        <button class="header__button" id="imprimir" aria-label="Imprimir incapacidad">Imprimir</button>
+    </header>
+
+    <main class="incapacidad">
+        <!-- Información básica del paciente -->
+        <section class="incapacidad__form">
+            <div class="incapacidad__group">
+                <label class="incapacidad__label" for="fecha">Fecha</label>
+                <input class="incapacidad__input" type="date" id="fecha" required>
+            </div>
+            <div class="incapacidad__group">
+                <label class="incapacidad__label" for="remiten">Donde Remiten</label>
+                <input class="incapacidad__input" type="text" id="remiten" required>
+            </div>
+            <div class="incapacidad__group">
+                <label class="incapacidad__label" for="nombres">Nombres</label>
+                <input class="incapacidad__input" type="text" id="nombres" required>
+            </div>
+            <div class="incapacidad__group">
+                <label class="incapacidad__label" for="apellidos">Apellidos</label>
+                <input class="incapacidad__input" type="text" id="apellidos" required>
+            </div>
+            <div class="incapacidad__group">
+                <label class="incapacidad__label" for="documento">Número de documento</label>
+                <input class="incapacidad__input" type="text" id="documento" required>
+            </div>
+            <div class="incapacidad__group">
+                <label class="incapacidad__label" for="edad">Edad</label>
+                <input class="incapacidad__input" type="number" id="edad" required>
+            </div>
+            <div class="incapacidad__group">
+                <label class="incapacidad__label" for="genero">Género</label>
+                <input class="incapacidad__input" type="text" id="genero" required>
+            </div>
+            <div class="incapacidad__group">
+                <label class="incapacidad__label" for="telefono">Teléfono</label>
+                <input class="incapacidad__input" type="text" id="telefono" required>
+            </div>
+        </section>
+
+        <!-- Detalles de la incapacidad -->
+        <section class="incapacidad__details">
+            <div class="incapacidad__group">
+                <label class="incapacidad__label" for="diagnostico">Diagnóstico Principal</label>
+                <input class="incapacidad__input" type="text" id="diagnostico" required>
+            </div>
+            <div class="incapacidad__group">
+                <label class="incapacidad__label" for="observaciones">Observaciones</label>
+                <input class="incapacidad__input" type="text" id="observaciones" required>
+            </div>
+            <div class="incapacidad__group">
+                <label class="incapacidad__label" for="numeroI">Número Incapacidad</label>
+                <input class="incapacidad__input" type="number" id="numeroI" required>
+            </div>
+            <div class="incapacidad__group">
+                <label class="incapacidad__label" for="dias">Días de Incapacidad</label>
+                <input class="incapacidad__input" type="text" id="dias" required>
+            </div>
+            <div class="incapacidad__group">
+                <label class="incapacidad__label" for="inicioI">Inicio Incapacidad</label>
+                <input class="incapacidad__input" type="date" id="inicioI" required>
+            </div>
+            <div class="incapacidad__group">
+                <label class="incapacidad__label" for="finalI">Final Incapacidad</label>
+                <input class="incapacidad__input" type="date" id="finalI" required>
+            </div>
+        </section>
+
+        <!-- Información del profesional médico -->
+        <section class="incapacidad__professional">
+            <div class="incapacidad__group">
+                <label class="incapacidad__label" for="profesional">Profesional</label>
+                <input class="incapacidad__input" type="text" id="profesional" required>
+            </div>
+            <div class="incapacidad__group">
+                <label class="incapacidad__label" for="registro">Registro Profesional</label>
+                <input class="incapacidad__input" type="text" id="registro" required>
+            </div>
+            <div class="incapacidad__group">
+                <label class="incapacidad__label" for="direccion">Dirección IPS</label>
+                <input class="incapacidad__input" type="text" id="direccion" required>
+            </div>
+            <div class="incapacidad__group">
+                <label class="incapacidad__label" for="especialidad">Especialidad</label>
+                <input class="incapacidad__input" type="text" id="especialidad" required>
+            </div>
+        </section>
+    </main>
+
+    <!-- Ventana confirmación -->
+    <div class="modal" id="modal">
+        <div class="modal__content">
+            <p class="modal__message">¿Estás seguro que quieres imprimir el recetario?</p>
+            <a href="/HTML/Medico/final.html">
+                <button class="modal__button" id="finalizar">Finalizar</button>
+            </a>
+        </div>
+    </div>
+
+    <script src="/JAVASCRIP/recetario.js"></script>
+</body>
+</html>

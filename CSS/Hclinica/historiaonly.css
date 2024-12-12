@@ -1,23 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-/* Estilo General */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #F5F5F5; /* Gris claro */
-    color: #333; /* Negro suave */
+    background-color: #F5F5F5; 
+    color: #333; 
 }
 
 /* Encabezado */
 header {
-    background-color: #011f30; /* Azul oscuro */
-    color: #ffffff; /* Blanco */
+    background-color: #011f30; 
+    color: #ffffff; 
     text-align: center;
     padding: 20px 0;
 }
@@ -25,16 +22,15 @@ header {
 h1 {
     font-family:'Zilla Slab Highlight', serif ;
     font-size: 2.5rem;
-    width: 50%; /* Ancho reducido a la mitad */
-    margin: 0 auto; /* Centrado del h1 */
+    width: 50%; 
+    margin: 0 auto; 
 }
 
 a {
-    color: #ffffff; /* Blanco */
+    color: #ffffff; 
     text-decoration: none;
 }
 
-/* Cambiar color al hacer clic en el enlace IZEL */
 a:hover {
     color: #6AC1B8; /* Azul claro */
 }
@@ -45,8 +41,8 @@ a:hover {
     top: 90px;
     left: 0;
     width: 80px;
-    height: 78%; /* Reducido para que no cubra el encabezado */
-    background-color: #013857; /* Azul intermedio */
+    height: 78%; 
+    background-color: #013857; 
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
     display: flex;
@@ -69,11 +65,11 @@ a:hover {
     text-align: center;
     margin-left: 100px;
     padding: 20px;
-    background-color: #ffffff; /* Blanco */
+    background-color: #ffffff; 
     border-radius: 15px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 45%; /* Ancho reducido a la mitad */
-    margin-top: 30px; /* Separación del encabezado */
+    width: 45%; 
+    margin-top: 30px; 
 }
 
 .caja-informacion {
@@ -83,7 +79,7 @@ a:hover {
     margin-left: 10px;
     margin-right: 10px;
     padding: 10px;
-    background-color: #e0e0e0; /* Gris suave */
+    background-color: #e0e0e0; 
     border-radius: 10px;
 }
 
@@ -92,8 +88,8 @@ a:hover {
     text-align: center;
     position: absolute;
     top: 180px;
-    right: 150px; /* Movido más a la derecha */
-    background-color: #ffffff; /* Blanco */
+    right: 150px; 
+    background-color: #ffffff; 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -106,25 +102,25 @@ a:hover {
     padding: 10px;
     margin-top: 10px;
     border-radius: 5px;
-    border: 1px solid #e0e0e0; /* Gris suave */
+    border: 1px solid #e0e0e0; 
 }
 
 .filtro-fecha button {
-    background-color: #6AC1B8; /* Azul claro */
-    color: #ffffff; /* Blanco */
+    background-color: #6AC1B8; 
+    color: #ffffff;
     cursor: pointer;
 }
 
 .filtro-fecha button:hover {
-    background-color: #011f30; /* Azul oscuro */
+    background-color: #011f30; 
 }
 
 /* Sección Clasificación Riesgo */
 .clasificacion-riesgo {
     position: absolute;
-    bottom: 30px; /* Más arriba */
-    right: 400px; /* Más a la derecha */
-    background-color: #ffffff; /* Blanco */
+    bottom: 30px; 
+    right: 400px; 
+    background-color: #ffffff; 
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -140,10 +136,10 @@ a:hover {
 .clasificacion-riesgo td {
     padding: 10px;
     text-align: left;
-    border: 1px solid #e0e0e0; /* Gris suave */
+    border: 1px solid #e0e0e0; 
 }
 
 .clasificacion-riesgo th {
-    background-color: #013857; /* Azul intermedio */
-    color: #ffffff; /* Blanco */
+    background-color: #013857; 
+    color: #ffffff; 
 }

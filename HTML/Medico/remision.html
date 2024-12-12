@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izel</title>
+    <link rel="stylesheet" href="/CSS/Medico/remision.css">
+</head>
+<body>
+    <header class="encabezado">
+        <div class="encabezado__logo">
+            <span>IZEL</span>
+        </div>
+        <h1 class="encabezado__titulo">ORDEN</h1>
+        <button class="encabezado__boton" id="imprimir">Imprimir</button>
+    </header>
+
+    <main class="orden">
+        <section class="orden__formulario">
+            <div class="orden__grupo">
+                <label class="orden__etiqueta" for="fecha">Fecha</label>
+                <input class="orden__entrada" type="date" id="fecha">
+            </div>
+            <div class="orden__grupo">
+                <label class="orden__etiqueta" for="remiten">Donde Remiten</label>
+                <input class="orden__entrada" type="text" id="remiten">
+            </div>
+            <div class="orden__grupo">
+                <label class="orden__etiqueta" for="nombres">Nombres</label>
+                <input class="orden__entrada" type="text" id="nombres">
+            </div>
+            <div class="orden__grupo">
+                <label class="orden__etiqueta" for="apellidos">Apellidos</label>
+                <input class="orden__entrada" type="text" id="apellidos">
+            </div>
+            <div class="orden__grupo">
+                <label class="orden__etiqueta" for="documento">Número de documento</label>
+                <input class="orden__entrada" type="text" id="documento">
+            </div>
+            <div class="orden__grupo">
+                <label class="orden__etiqueta" for="edad">Edad</label>
+                <input class="orden__entrada" type="number" id="edad">
+            </div>
+            <div class="orden__grupo">
+                <label class="orden__etiqueta" for="genero">Género</label>
+                <input class="orden__entrada" type="text" id="genero">
+            </div>
+            <div class="orden__grupo">
+                <label class="orden__etiqueta" for="telefono">Teléfono</label>
+                <input class="orden__entrada" type="text" id="telefono">
+            </div>
+        </section>
+
+        <section class="orden__detalles">
+            <div class="orden__grupo">
+                <label class="orden__etiqueta" for="numero-orden">Número de orden</label>
+                <input class="orden__entrada" type="text" id="numero-orden" value="887472">
+            </div>
+            <div class="orden__grupo">
+                <label class="orden__etiqueta" for="descripcion">Descripción</label>
+                <input class="orden__entrada" type="text" id="descripcion" value="Consulta Primera vez Dermatología">
+            </div>
+            <div class="orden__grupo">
+                <label class="orden__etiqueta" for="lat">LAT</label>
+                <input class="orden__entrada" type="text" id="lat">
+            </div>
+            <div class="orden__grupo">
+                <label class="orden__etiqueta" for="sin">SIN</label>
+                <input class="orden__entrada" type="text" id="sin" value="0001">
+            </div>
+        </section>
+
+        <section class="orden__profesional">
+            <div class="orden__grupo">
+                <label class="orden__etiqueta" for="profesional">Profesional</label>
+                <input class="orden__entrada" type="text" id="profesional">
+            </div>
+            <div class="orden__grupo">
+                <label class="orden__etiqueta" for="registro">Registro profesional</label>
+                <input class="orden__entrada" type="text" id="registro">
+            </div>
+            <div class="orden__grupo">
+                <label class="orden__etiqueta" for="direccion">Dirección IPS</label>
+                <input class="orden__entrada" type="text" id="direccion">
+            </div>
+            <div class="orden__grupo">
+                <label class="orden__etiqueta" for="especialidad">Especialidad</label>
+                <input class="orden__entrada" type="text" id="especialidad">
+            </div>
+        </section>
+    </main>
+
+    <!-- Ventana de confirmación -->
+    <div class="modal" id="modal">
+        <div class="modal__contenido">
+            <p class="modal__mensaje">¿Estás seguro que quieres imprimir el recetario?</p>
+            <a href="/HTML/Medico/final.html" ><button class="modal__boton" id="finalizar">Finalizar</button></a>
+        </div>
+    </div>
+
+    <script src="/JAVASCRIP/recetario.js"></script>
+</body>
+</html>

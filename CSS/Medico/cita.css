@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenedor de Datos */
+.contenedor-datos {
+    width: 90%;
+    background-color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    border: 2px solid #013857;
+}
+
+.contenedor-datos h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #011f30;
+}
+
+/* Contenedor Detalles */
+.contenedor-detalles {
+    display: grid;
+    grid-template-columns: repeat(4, auto); 
+    gap: 15px;
+    background-color: #E0E0E0;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #013857;
+    flex-wrap: wrap;
+}
+
+.contenedor-detalles div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.contenedor-detalles label {
+    font-weight: bold;
+    color: #011f30;
+    margin-bottom: 5px;
+    white-space: nowrap;
+}
+
+.contenedor-detalles input,
+.contenedor-detalles select {
+    padding: 10px;
+    border: 1px solid #013857;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    width: auto; 
+}
+
+/* Contenedor Notas */
+.contenedor-notas {
+    width: 70%;
+    height: 135px; 
+    background-color: #E8F6F9;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 0;
+    position: relative; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%; 
+    height: 100%; 
+    padding: 15px;
+    border: 1px solid #013857;
+    border-radius: 5px;
+    resize: none;
+    background-color: #F5F5F5;
+    color: #333;
+    font-size: 1rem;
+    box-sizing: border-box;
+
+}
+
+/* Botón */
+.contenedor-boton {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    bottom: -150px;
+}
+
+.contenedor-boton button {
+    background-color: #013857;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.contenedor-boton button:hover {
+    background-color: #6AC1B8;
+}

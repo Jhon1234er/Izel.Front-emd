@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izel</title>
+    <link rel="stylesheet" href="/CSS/Medico/recetario.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <span>IZEL</span>
+        </div>
+        <h1 class="header__title">RECETARIO</h1>
+        <button class="header__button" id="imprimir">Imprimir</button>
+    </header>
+
+    <main class="recetario">
+        <section class="recetario__form">
+            <div class="recetario__group">
+                <label class="recetario__label" for="fecha">Fecha</label>
+                <input class="recetario__input" type="date" id="fecha">
+            </div>
+            <div class="recetario__group">
+                <label class="recetario__label" for="nombres">Nombres</label>
+                <input class="recetario__input" type="text" id="nombres">
+            </div>
+            <div class="recetario__group">
+                <label class="recetario__label" for="apellidos">Apellidos</label>
+                <input class="recetario__input" type="text" id="apellidos">
+            </div>
+            <div class="recetario__group">
+                <label class="recetario__label" for="documento">Número de documento</label>
+                <input class="recetario__input" type="text" id="documento">
+            </div>
+            <div class="recetario__group">
+                <label class="recetario__label" for="edad">Edad</label>
+                <input class="recetario__input" type="number" id="edad">
+            </div>
+            <div class="recetario__group">
+                <label class="recetario__label" for="genero">Género</label>
+                <input class="recetario__input" type="text" id="genero">
+            </div>
+            <div class="recetario__group">
+                <label class="recetario__label" for="telefono">Teléfono</label>
+                <input class="recetario__input" type="text" id="telefono">
+            </div>
+            <div class="recetario__group">
+                <label class="recetario__label" for="aseguradora">Aseguradora</label>
+                <input class="recetario__input" type="text" id="aseguradora">
+            </div>
+        </section>
+
+        <section class="recetario__details">
+            <div class="recetario__group">
+                <label class="recetario__label" for="numero-orden">Número de orden</label>
+                <input class="recetario__input" type="text" id="numero-orden">
+            </div>
+            <div class="recetario__group">
+                <label class="recetario__label" for="medicamento">Medicamento</label>
+                <input class="recetario__input" type="text" id="medicamento">
+            </div>
+            <div class="recetario__group">
+                <label class="recetario__label" for="cantidad">Cantidad</label>
+                <input class="recetario__input" type="number" id="cantidad">
+            </div>
+            <div class="recetario__group">
+                <label class="recetario__label" for="dosis">Dosis</label>
+                <input class="recetario__input" type="text" id="dosis">
+            </div>
+            <div class="recetario__group">
+                <label class="recetario__label" for="intervalo">Intervalo</label>
+                <input class="recetario__input" type="text" id="intervalo">
+            </div>
+            <div class="recetario__group">
+                <label class="recetario__label" for="tiempo">Tiempo de tratamiento</label>
+                <input class="recetario__input" type="text" id="tiempo">
+            </div>
+        </section>
+
+        <section class="recetario__recommendations">
+            <label class="recetario__label" for="recomendaciones">Recomendaciones</label>
+            <textarea class="recetario__textarea" id="recomendaciones"></textarea>
+        </section>
+
+        <section class="recetario__professional">
+            <div class="recetario__group">
+                <label class="recetario__label" for="profesional">Profesional</label>
+                <input class="recetario__input" type="text" id="profesional">
+            </div>
+            <div class="recetario__group">
+                <label class="recetario__label" for="registro">Registro profesional</label>
+                <input class="recetario__input" type="text" id="registro">
+            </div>
+            <div class="recetario__group">
+                <label class="recetario__label" for="direccion">Dirección IPS</label>
+                <input class="recetario__input" type="text" id="direccion">
+            </div>
+            <div class="recetario__group">
+                <label class="recetario__label" for="especialidad">Especialidad</label>
+                <input class="recetario__input" type="text" id="especialidad">
+            </div>
+        </section>
+    </main>
+
+    <!-- Ventana de confirmación -->
+    <div class="modal" id="modal">
+        <div class="modal__content">
+            <p class="modal__message">¿Estás seguro que quieres imprimir el recetario?</p>
+            <a href="/HTML/Medico/final.html" ><button class="modal__button" id="finalizar">Finalizar</button></a>
+        </div>
+    </div>
+
+    <script src="/JAVASCRIP/recetario.js"></script>
+</body>
+</html>

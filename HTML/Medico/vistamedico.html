@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medico-Izel</title>
+    <link rel="stylesheet" href="/CSS/Medico/vistamedico.css">
+</head>
+<body>
+    
+    <header class="encabezado">
+        <div class="encabezado__izquierda">
+            <h1>BIENVENIDO A IZEL - <span id="nombre-usuario">DOCTOR HAMILTON </span></h1>
+        </div>
+        <div class="encabezado__derecha">
+            <div class="encabezado__icono-perfil">
+                <img src="/ICONOS/usuario.png" alt="Perfil">
+                <div class="encabezado__opciones-perfil">
+                    <ul>
+                        <li><a href="/HTML/Medico/vistamedico.html">Punto De Vista Del Medico</a></li>
+                        <li><a href="#" id="ver-perfil">Ver Perfil</a></li>
+                        <li><a href="/HTML/home.html">Cerrar Sesión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="contenido">
+        <h2>AGENDA DEL DÍA 12-DICIEMBRE-2024</h2>
+        <div class="tabla-agenda">
+            <table>            
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Paciente</th>
+                        <th>Motivo De Consulta</th>
+                        <th>Asistencia</th>
+                        <th>Iniciar Consulta</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>06:30</td>
+                        <td>Harold Steven</td>
+                        <td>Consulta General</td>
+                        <td><input type="checkbox"></td>
+                        <td><a href="/HTML/Medico/cita.html">Empezar</a></td>
+                    </tr>
+                    <tr>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                    </tr>
+                    <tr>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                        <td>--</td>
+                    </tr>
+                </tbody> 
+                <tfoot>
+                    <tr>
+                        <td colspan="5">Este cuadro tendrá ocupado toda la pantalla en el cual se almacenarán todas las agendas del doctor. AVISO: Al momento de darle empezar no tendrás vuelta atrás porque las citas no se pueden cancelar a mitad de proceso, solo hasta que finalicen.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <footer class="pie">
+        <div class="pie__contenido">
+            <div class="pie__iconos">
+                <a href="#"><img src="/ICONOS/logo-de-facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="/ICONOS/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="/ICONOS/gorjeo.png" alt="Twitter"></a>
+                <a href="#"><img src="/ICONOS/youtube.png" alt="YouTube"></a>
+            </div>
+            <div class="pie__informacion">
+                <p>Información | Sede Principal | Teléfono de Contacto</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
